@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 4
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -42,8 +42,8 @@ requirements:
     - openff-fragmenter-base >=0.1.2
     - openmm >=7.6.0
     - qcportal >=0.50
-    - qcengine >=0.25.0
-    - qcelemental >=0.25.1
+    - qcengine >=0.25.0,<0.50
+    - qcelemental >=0.25.1,<0.50
     - chemper
     - geometric =1
     - torsiondrive
